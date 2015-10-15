@@ -1,8 +1,8 @@
 {
   "name": "json-api-generator",
-  "description": "A simple module that creates a json api from handlebar templates, heavily based on mock-json-api",
-  "version": "1.0.0",
-  "repository": "vikeri/mock-json-api",
+  "description": "A simple module that creates a json api from handlebar templates",
+  "version": "1.0.1",
+  "repository": "vikeri/json-api-generator",
   "main": "index.js",
   "dependencies": {
     "console.table": "^0.4.0",
