@@ -1,0 +1,17 @@
+{
+  "name": "json-api-generator",
+  "description": "A simple module that creates a json api from handlebar templates, heavily based on mock-json-api",
+  "version": "1.0.0",
+  "repository": "vikeri/mock-json-api",
+  "main": "index.js",
+  "dependencies": {
+    "console.table": "^0.4.0",
+    "dummy-json": "0.0.2",
+    "express": "~4.13.0",
+    "lodash": "^3.9.3",
+    "lorem-ipsum": "^1.0.3",
+    "open": "0.0.5"
+  },
+  "author": "Viktor Eriksson <viktor.eriksson2@gmail.com>",
+  "license": "ISC"
+}
