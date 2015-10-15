@@ -50,6 +50,8 @@ In addition to the helpers available [here](https://github.com/webroo/dummy-json
 ## Example
 In this example we will create a GeoJSON response.
 
+A full repo with this example can be found here: [geojson-generator](https://github.com/vikeri/geojson-generator)
+
 ### `index.js`
 
 ```js
@@ -86,7 +88,7 @@ mock({
 
 This is a template that generates a GeoJSON with five points on the map.
 
-```
+```hbs
 {
 "type": "FeatureCollection",
 "features":
