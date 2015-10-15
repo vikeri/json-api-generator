@@ -1,5 +1,5 @@
 # json-api-generator
-> Generates api endpoints from handlebar json templates
+> Generates json api endpoints from templates
 
 Inspired by [mock-json-api](https://www.npmjs.com/package/mock-json-api) and relies heavily on [dummy-json](https://github.com/webroo/dummy-json)
 
@@ -86,7 +86,7 @@ mock({
 
 This is a template that generates a GeoJSON with five points on the map.
 
-```json
+```
 {
 "type": "FeatureCollection",
 "features":
