@@ -52,26 +52,24 @@ In this example we will create a GeoJSON response.
 
 A full repo with this example can be found here: [geojson-generator](https://github.com/vikeri/geojson-generator)
 
+An example of a resulting json is found here: [geojson-example](https://github.com/vikeri/geojson-generator/blob/master/example-output.json?short_path=b2147ad)
+
 ### `index.js`
 
 ```js
 "use strict";
 
-var mock = require("mock-json-api");
+var mock = require("json-api-generator");
 
 mock({
 	// We keep our templates in a directory called templates
 	templateDir: './templates/',
 	
-	// We create two helpers for GeoJson, they return one of their values.
+	// We create a helper that will return one of the values Project, Office or Trip.
 	helpers: {
         place: function() {
             var place = ["Project","Office","Trip"];
             return place[Math.floor(Math.random() * place.length)];
-        },
-        markerSymbol: function () {
-            var symbols = ["w","suitcase","heart","commercial"];
-            return symbols[Math.floor(Math.random() * symbols.length)];
         }
 	},
 	
@@ -98,7 +96,7 @@ This is a template that generates a GeoJSON with five points on the map.
 		"type": "Feature",
 		"properties": {
 			"id": "{{index}}",
-			"title": "{{place}}",
+			"title": "{{place}}", {{! Here we use our handler defined in index.js }}
 			"description": "{{text}}",
 			"image": "{{imageUrl}}"
 		},
