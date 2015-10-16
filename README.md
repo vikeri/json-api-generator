@@ -6,15 +6,19 @@ Inspired by [mock-json-api](https://www.npmjs.com/package/mock-json-api) and rel
 ## When?
 When you want to test your app with a json endpoint that is randomly generated from a template.
 
+What it does is it generates "random" json responses based on a template. This allows you to test your front-end client with different backend data that still coheres to your api.
+
+Each time you restart the server, the endpoint will give you a new generated response.
+
 ## How?
 
-You create your desired json structure by writing handlebars template files that will be converted to json (using [dummy-json](https://github.com/webroo/dummy-json))
+You create your desired json structure by writing handlebars template files that will generate the json response (using [dummy-json](https://github.com/webroo/dummy-json))
 
 See [example](#example)
 
 ## Anything fancy?
 
-Multiple endpoints can be defined, just create more templates and put them in your specified template folder.
+Multiple endpoints can be defined, just create more template files and put them in your specified template folder.
 
 ## Install
 ```sh
