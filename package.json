@@ -1,7 +1,7 @@
 {
   "name": "json-api-generator",
   "description": "A simple module that creates a json api from handlebar templates",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "repository": "vikeri/json-api-generator",
   "main": "index.js",
   "dependencies": {
