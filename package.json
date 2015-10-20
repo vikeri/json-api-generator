@@ -6,7 +6,7 @@
   "main": "index.js",
   "dependencies": {
     "console.table": "^0.4.0",
-    "dummy-json": "0.0.2",
+    "dummy-json": "0.0.3",
     "express": "~4.13.0",
     "lodash": "^3.9.3",
     "lorem-ipsum": "^1.0.3",
