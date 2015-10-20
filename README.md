@@ -120,3 +120,7 @@ This is a template that generates a GeoJSON with five points on the map.
 }
 
 ```
+
+## Changes
+
+* `1.1.0` Added address parameter
