@@ -86,15 +86,17 @@ module.exports = function(vars) {
 
 
     var portNo = vars.port ? vars.port : 1989;
+    var address = vars.address ? vars.address : 'localhost';
 
-    var server = app.listen(portNo, function() {
+    var server = app.listen(portNo, address, function() {
 
         var port = server.address().port;
+        var address = server.address().address;
 
-        console.log('\nExample app listening at http://localhost:%s', port);
+        console.log('\nExample app listening at http://%s:%s', address, port);
 
     });
     if (vars.open) {
-        open("http://localhost:" + portNo + routes[0]);
+        open("http://" + address + ":" + portNo + routes[0]);
     }
 };

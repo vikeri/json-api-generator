@@ -34,6 +34,8 @@ The directory where you keep your template files.
 A map of generator helpers. Functions that will be available in your template file. Some helpers are available out of the box, see (helpers)[#helpers]
 ### `log (optional)`
 A boolean specifying whether to log each request in the terminal. Defaults to false.
+### `address (optional)`
+Which address the server should listen to, default to `localhost`
 ### `port (optional)`
 Which port the server should be run on, defaults to 1989.
 ### `open (optional)`
